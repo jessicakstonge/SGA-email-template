@@ -1,0 +1,6 @@
+Automated SGA This Week on Campus Email Updater
+
+1. Install Jekyll
+2. Update the data in index.md file
+3. Navigate to the emailTemplate folder in the terminal and run “bundle exec jekyll b”
+4. Copy the HTML generated in the _site folder and paste in the Gmail compose window using the HTMLAppend Chrome extension.

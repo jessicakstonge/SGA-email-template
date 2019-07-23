@@ -1,0 +1,413 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>This Week on Campus</title>
+		<style type="text/css">
+			p{margin:0 0 1em 0;}
+			a{word-wrap:break-word;}
+			table{border-collapse:collapse;}
+			img, a img{border:0; height:auto; outline:none; text-decoration:none;}
+			body, #bodyTable{height:100%; margin:0; padding:0; width:100%;}
+
+			#outlook a{padding:0;}
+			img{-ms-interpolation-mode:bicubic;}
+			table{mso-table-lspace:0pt; mso-table-rspace:0pt;}
+			.ReadMsgBody{width:100%;} .ExternalClass{width:100%;}
+			p, a, li, td{mso-line-height-rule:exactly;}
+			a[href^="tel"], a[href^="sms"]{color:inherit; cursor:default; text-decoration:none;}
+			p, a, li, td, body, table{-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;}
+			.ExternalClass, .ExternalClass p, .ExternalClass td, .ExternalClass div, .ExternalClass span, .ExternalClass font{line-height:100%;}
+			a[x-apple-data-detectors]{color:inherit !important; text-decoration:none !important; font-size:inherit !important; font-family:inherit !important; font-weight:inherit !important; line-height:inherit !important;}
+
+			body, #bodyTable{
+				background-color: #1EA549;
+				-webkit-font-smoothing: antialiased;
+				font-family: Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #2E2B23;
+			}
+
+			.greeting {
+				background-color: #FAF7F0;
+				padding: 30px 30px 15px 30px;
+				font-size: 16px;
+				border: #EBDAB5 solid;
+			}
+
+			.greeting-head {
+				border-width: 0 0 1px 0;
+			}
+
+			.greeting-footer {
+				border-width: 1px 0 0 0;
+			}
+
+			.activity-list-date {
+				padding: 7px;
+				font-size: 16px;
+				line-height: 16px;
+				letter-spacing: 0.5px;
+				font-weight: bold;
+				color: #FAF7F0;
+				background-color: #1EA549;
+			}
+
+			.activity-list-info {
+				padding: 15px 7px;
+			}
+			
+			.activity-list-info ol,
+			.activity-list-info ul {
+				margin: 0;
+				padding-left: 20px;
+				list-style-position: outside;
+			}
+
+			.activity-list-info li {
+				padding-bottom: 8px;
+			}
+
+			.flexibleImage {
+				max-width: 150px;
+			}
+
+			.leftColumn, .rightColumn{
+				max-width:320px;
+				padding-bottom: 50px;
+			}
+
+			.imageContainer {
+				padding: 10px 30px 40px 30px;
+			}
+
+			.footer {
+				padding-bottom: 50px;
+			}
+
+			@media screen and (max-width:655px){
+				.leftColumn, .rightColumn{
+					max-width:100% !important;
+				}
+
+				.footer {
+					padding-bottom: 0;
+				}
+			}
+		</style>
+	</head>
+	<body style="height: 100%;margin: 0;padding: 0;width: 100%;background-color: #1EA549;-webkit-font-smoothing: antialiased;font-family: Helvetica, Arial, sans-serif;font-size: 14px;color: #2E2B23;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+		<center>
+			<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding: 0;width: 100%;background-color: #1EA549;-webkit-font-smoothing: antialiased;font-family: Helvetica, Arial, sans-serif;font-size: 14px;color: #2E2B23;">
+				<tr>
+					<td align="center" valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+						<table align="center" cellpadding="0" cellspacing="0" width="100%" id="emailBody" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+							<tr>
+								<td align="center" valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+									<!--[if gte mso 9]>
+									<table align="center" border="0" cellspacing="0" cellpadding="0" width="640">
+									<tr>
+									<td align="center" valign="top">
+									<![endif]-->
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 640px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+										<tr>
+											<td align="center" valign="top" style="padding: 30px 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+												<a href="#" style="word-wrap: break-word;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+													<img src="https://raw.githubusercontent.com/albrechtnate/SGA-TWOC-Email-Template/master/logo.png" width="470" style="max-width: 80%;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" alt="This Week on Campus" border="0" align="center">
+												</a>
+												<p style="margin: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-size: 16px; font-weight: bold; color:#FAF7F0;padding-top:20px;">{{ page.week }}</p>
+											</td>
+										</tr>
+									</table>
+									<!--[if gte mso 9]>
+									</td>
+									</tr>
+									</table>
+									<![endif]-->
+								</td>
+							</tr>
+						</table>
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+							<tr>
+								<td align="center" valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+									<!--[if gte mso 9]>
+									<table align="center" border="0" cellspacing="0" cellpadding="0" width="640">
+									<tr>
+									<td align="center" valign="top">
+									<![endif]-->
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 640px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+										<tr>
+											<td valign="top" class="greeting greeting-head" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FAF7F0;padding: 30px 30px 15px 30px;font-size: 16px;border: #EBDAB5 solid;border-width: 0 0 1px 0;">
+												<p style="margin: 0 0 1em 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><b>{{ page.greeting }}</b></p>
+												{% if page.note %}<p style="margin: 0 0 1em 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">{{ page.note }}</p>{% endif %}
+												<p style="margin: 0 0 1em 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">{{ page.hwgoctw }}</p>
+											</td>
+										</tr>
+									</table>
+									<!--[if gte mso 9]>
+									</td>
+									</tr>
+									</table>
+									<![endif]-->
+								</td>
+							</tr>
+						</table>
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" id="emailColumns" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+							<tr>
+								<td align="center" valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+									<!--[if gte mso 9]>
+									<table align="center" border="0" cellspacing="0" cellpadding="0" width="640">
+									<tr>
+									<td align="center" valign="top">
+									<![endif]-->
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 640px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+										<tr>
+											<td valign="top" bgcolor="#F0E4C9" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+												<!--[if gte mso 9]>
+												<table border="0" cellpadding="0" cellspacing="0" width="640">
+												<tr>
+												<td align=”center” valign=”top” width="320">
+												<![endif]-->
+												<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" class="leftColumn" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 320px;padding-bottom: 50px;">
+													<tr>
+														<td align="center" valign="top" class="imageContainer" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 40px 30px;">
+															<img src="https://raw.githubusercontent.com/albrechtnate/SGA-TWOC-Email-Template/master/monday.png" alt="Monday" width="150" class="flexibleImage" style="border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;max-width: 150px;">
+															<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FAF7F0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+																<tr>
+																	<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 7px;font-size: 16px;line-height: 16px;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #1EA549;">{{ page.monday }}</td>
+																</tr>
+																<tr>
+																	<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;">{% if page.monday_events == null %}<p align="center" style="margin: 0 0 1em 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">No Events Scheduled</p>{% else %}<ol style="margin: 0;padding-left: 20px;list-style-position: outside;">{% for event in page.monday_events %}<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">{{ event }}</li>{% endfor %}</ol>{% endif %}</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" class="rightColumn" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 320px;padding-bottom: 50px;">
+													<tr>
+														<td align="center" valign="top" class="imageContainer" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 40px 30px;">
+															<img src="https://raw.githubusercontent.com/albrechtnate/SGA-TWOC-Email-Template/master/tuesday.png" alt="Tuesday" width="150" class="flexibleImage" style="border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;max-width: 150px;">
+															<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FAF7F0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+																<tr>
+																	<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 7px;font-size: 16px;line-height: 16px;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #1EA549;">{{ page.tuesday }}</td>
+																</tr>
+																<tr>
+																	<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;">{% if page.tuesday_events == null %}<p align="center" style="margin: 0 0 1em 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">No Events Scheduled</p>{% else %}<ol style="margin: 0;padding-left: 20px;list-style-position: outside;">{% for event in page.tuesday_events %}<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">{{ event }}</li>{% endfor %}</ol>{% endif %}</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												<!--[if gte mso 9]>
+												</td>
+												</tr>
+												</table>
+												<![endif]-->
+											</td>
+										</tr>
+									</table>
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 640px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+										<tr>
+											<td valign="top" bgcolor="#F0E4C9" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+												<!--[if gte mso 9]>
+												<table border="0" cellpadding="0" cellspacing="0" width="640">
+												<tr>
+												<td align=”center” valign=”top” width="320">
+												<![endif]-->
+												<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" class="leftColumn" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 320px;padding-bottom: 50px;">
+													<tr>
+														<td align="center" valign="top" class="imageContainer" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 40px 30px;">
+															<img src="https://raw.githubusercontent.com/albrechtnate/SGA-TWOC-Email-Template/master/wednesday.png" alt="Wednesday" width="150" class="flexibleImage" style="border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;max-width: 150px;">
+															<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FAF7F0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+																<tr>
+																	<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 7px;font-size: 16px;line-height: 16px;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #1EA549;">{{ page.wednesday }}</td>
+																</tr>
+																<tr>
+																	<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;">{% if page.wednesday_events == null %}<p align="center" style="margin: 0 0 1em 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">No Events Scheduled</p>{% else %}<ol style="margin: 0;padding-left: 20px;list-style-position: outside;">{% for event in page.wednesday_events %}<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">{{ event }}</li>{% endfor %}</ol>{% endif %}</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" class="rightColumn" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 320px;padding-bottom: 50px;">
+													<tr>
+														<td align="center" valign="top" class="imageContainer" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 40px 30px;">
+															<img src="https://raw.githubusercontent.com/albrechtnate/SGA-TWOC-Email-Template/master/thursday.png" alt="Thursday" width="150" class="flexibleImage" style="border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;max-width: 150px;">
+															<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FAF7F0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+																<tr>
+																	<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 7px;font-size: 16px;line-height: 16px;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #1EA549;">{{ page.thursday }}</td>
+																</tr>
+																<tr>
+																	<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;">{% if page.thursday_events == null %}<p align="center" style="margin: 0 0 1em 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">No Events Scheduled</p>{% else %}<ol style="margin: 0;padding-left: 20px;list-style-position: outside;">{% for event in page.thursday_events %}<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">{{ event }}</li>{% endfor %}</ol>{% endif %}</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												<!--[if gte mso 9]>
+												</td>
+												</tr>
+												</table>
+												<![endif]-->
+											</td>
+										</tr>
+									</table>
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 640px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+										<tr>
+											<td valign="top" bgcolor="#F0E4C9" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+												<!--[if gte mso 9]>
+												<table border="0" cellpadding="0" cellspacing="0" width="640">
+												<tr>
+												<td align=”center” valign=”top” width="320">
+												<![endif]-->
+												<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" class="leftColumn" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 320px;padding-bottom: 50px;">
+													<tr>
+														<td align="center" valign="top" class="imageContainer" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 40px 30px;">
+															<img src="https://raw.githubusercontent.com/albrechtnate/SGA-TWOC-Email-Template/master/friday.png" alt="Friday" width="150" class="flexibleImage" style="border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;max-width: 150px;">
+															<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FAF7F0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+																<tr>
+																	<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 7px;font-size: 16px;line-height: 16px;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #1EA549;">{{ page.friday }}</td>
+																</tr>
+																<tr>
+																	<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;">{% if page.friday_events == null %}<p align="center" style="margin: 0 0 1em 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">No Events Scheduled</p>{% else %}<ol style="margin: 0;padding-left: 20px;list-style-position: outside;">{% for event in page.friday_events %}<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">{{ event }}</li>{% endfor %}</ol>{% endif %}</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" class="rightColumn" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 320px;padding-bottom: 50px;">
+													<tr>
+														<td align="center" valign="top" class="imageContainer" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 40px 30px;">
+															<img src="https://raw.githubusercontent.com/albrechtnate/SGA-TWOC-Email-Template/master/saturday.png" alt="Saturday" width="150" class="flexibleImage" style="border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;max-width: 150px;">
+															<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FAF7F0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+																<tr>
+																	<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 7px;font-size: 16px;line-height: 16px;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #1EA549;">{{ page.saturday }}</td>
+																</tr>
+																<tr>
+																	<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;">{% if page.saturday_events == null %}<p align="center" style="margin: 0 0 1em 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">No Events Scheduled</p>{% else %}<ol style="margin: 0;padding-left: 20px;list-style-position: outside;">{% for event in page.saturday_events %}<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">{{ event }}</li>{% endfor %}</ol>{% endif %}</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												{% if page.sunday_events != null %}
+												<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 640px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+													<tr>
+														<td valign="top" bgcolor="#F0E4C9" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+															<!--[if gte mso 9]>
+															<table border="0" cellpadding="0" cellspacing="0" width="640">
+															<tr>
+															<td align=”center” valign=”top” width="320">
+															<![endif]-->
+															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" class="leftColumn" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 320px;padding-bottom: 50px;">
+																<tr>
+																	<td align="center" valign="top" class="imageContainer" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 40px 30px;">
+																		<img src="https://raw.githubusercontent.com/albrechtnate/SGA-TWOC-Email-Template/master/sunday.png" alt="Sunday" width="150" class="flexibleImage" style="border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;max-width: 150px;">
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FAF7F0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+																			<tr>
+																				<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 7px;font-size: 16px;line-height: 16px;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #1EA549;">{{ page.sunday }}</td>
+																			</tr>
+																			<tr>
+																				<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;"><ol style="margin: 0;padding-left: 20px;list-style-position: outside;">{% for event in page.sunday_events %}<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">{{ event }}</li>{% endfor %}</ol></td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+															<!--[if gte mso 9]>
+															</td>
+															</tr>
+															</table>
+															<![endif]-->
+														</td>
+													</tr>
+												</table>
+												{% endif %}
+												{% if page.featured_service_opportunities != null %}
+												<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 640px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+													<tr>
+														<td valign="top" bgcolor="#F0E4C9" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+															<!--[if gte mso 9]>
+															<table border="0" cellpadding="0" cellspacing="0" width="640">
+															<tr>
+															<td align=”center” valign=”top” width="320">
+															<![endif]-->
+															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 50px;">
+																<tr>
+																	<td align="center" valign="top" class="imageContainer" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 40px 30px;">
+																		<img src="https://raw.githubusercontent.com/albrechtnate/SGA-TWOC-Email-Template/master/featured-service-opportunities.png" alt="Featured Service Opportunities" width="450" class="flexibleImage" style="border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;max-width: 450px;">
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FAF7F0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+																			<tr>
+																				<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 7px;font-size: 16px;line-height: 16px;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #1EA549;">Featured Service Opportunities</td>
+																			</tr>
+																			<tr>
+																				<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px 30px 7px;"><ol style="margin: 0;padding-left: 20px; padding-right: 20px; list-style-position: outside;">{% for opportunity in page.featured_service_opportunities %}<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;list-style:none;padding-bottom: 8px;"><h3 style="margin-bottom:{% if opportunity.description != null %}10px{% else %}30px{% endif %}">{{ opportunity.title }}</h3>{% if opportunity.description != null %}<p style="margin-bottom:30px">{{ opportunity.description }}</p>{% endif %}<a href={{opportunity.link}} style="background-color:#1EA549;color:white;text-decoration:none;padding:8px">Learn More</a>{% if forloop.index < page.featured_service_opportunities.size %}<hr style="margin-top:40px">{% endif %}</li>{% endfor %}</ol></td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+															<!--[if gte mso 9]>
+															</td>
+															</tr>
+															</table>
+															<![endif]-->
+														</td>
+													</tr>
+												</table>
+												{% endif %}
+												<!--[if gte mso 9]>
+												</td>
+												</tr>
+												</table>
+												<![endif]-->
+											</td>
+										</tr>
+									</table>
+									<!--[if gte mso 9]>
+									</td>
+									</tr>
+									</table>
+									<![endif]-->
+								</td>
+							</tr>
+						</table>
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+							<tr>
+								<td align="center" valign="top" class="footer" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 50px;">
+									<!--[if gte mso 9]>
+									<table align="center" border="0" cellspacing="0" cellpadding="0" width="640">
+									<tr>
+									<td align="center" valign="top">
+									<![endif]-->
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 640px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+										<tr>
+											<td valign="top" class="greeting greeting-footer" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FAF7F0;padding: 30px 30px 15px 30px;font-size: 16px;border: #EBDAB5 solid;border-width: 1px 0 0 0;">
+												{% if page.ending_comment %}<p style="margin: 0 0 1em 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">{{ page.ending_comment }}</p>{% endif %}
+												<p style="margin-bottom: 0;margin: 0 0 1em 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">{{ page.salutation }}</p>
+												<img src="https://raw.githubusercontent.com/albrechtnate/SGA-TWOC-Email-Template/master/signature.png" width="300" style="margin-left: -20px;max-width: 100%;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" alt="Kristin and Marcus, SGA Involvement Directors">
+												<p style="border-top: 3px solid #1EA549;padding-top: 15px;font-size: 14px;line-height: 18px;margin: 0 0 1em 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><b>Marcus:</b> T 11&ndash;12 / R 12&ndash;2<br><b>Kristin:</b> M 11&ndash;12 / T 1&ndash;2 / F 1&ndash;2</p>
+												<p style="color:#717171;padding-top: 15px;font-size: 12px;line-height: 18px;margin: 0 0 1em 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Is this email not displaying properly? Please <a style="color:#717171" href="mailto:sgamarketing@cedarville.edu">let us know</a>.</p>
+
+											</td>
+										</tr>
+									</table>
+									<!--[if gte mso 9]>
+									</td>
+									</tr>
+									</table>
+									<![endif]-->
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</center>
+	</body>
+</html>
