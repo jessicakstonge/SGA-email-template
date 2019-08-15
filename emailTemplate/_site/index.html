@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>This Week on Campus</title>
 		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css?family=Montserrat:500,800&display=swap');
+
 			p{margin:0 0 1em 0;}
 			a{word-wrap:break-word;}
 			table{border-collapse:collapse;}
@@ -23,18 +25,16 @@
 			a[x-apple-data-detectors]{color:inherit !important; text-decoration:none !important; font-size:inherit !important; font-family:inherit !important; font-weight:inherit !important; line-height:inherit !important;}
 
 			body, #bodyTable{
-				background-color: #1EA549;
+				width:350px;
 				-webkit-font-smoothing: antialiased;
-				font-family: Helvetica, Arial, sans-serif;
-				font-size: 14px;
+				font-family: 'Montserrat', sans-serif;
 				color: #2E2B23;
+				margin: 0px auto;
 			}
 
 			.greeting {
-				background-color: #FAF7F0;
 				padding: 30px 30px 15px 30px;
 				font-size: 16px;
-				border: #EBDAB5 solid;
 			}
 
 			.greeting-head {
@@ -46,19 +46,20 @@
 			}
 
 			.activity-list-date {
-				padding: 7px;
-				font-size: 16px;
+				padding: 10px 15px 12px 15px;
 				line-height: 16px;
+				font-size: 30px;
 				letter-spacing: 0.5px;
-				font-weight: bold;
-				color: #FAF7F0;
-				background-color: #1EA549;
+				color: #FFFFFF;
+				width: 350px;
 			}
-
+			.activity-list-date span{
+				font-size:16px;
+			}
 			.activity-list-info {
 				padding: 15px 7px;
 			}
-			
+
 			.activity-list-info ol,
 			.activity-list-info ul {
 				margin: 0;
@@ -75,7 +76,6 @@
 			}
 
 			.leftColumn, .rightColumn{
-				max-width:320px;
 				padding-bottom: 50px;
 			}
 
@@ -86,328 +86,410 @@
 			.footer {
 				padding-bottom: 50px;
 			}
-
-			@media screen and (max-width:655px){
-				.leftColumn, .rightColumn{
-					max-width:100% !important;
-				}
-
-				.footer {
-					padding-bottom: 0;
-				}
+			.header{
+				max-width: 700px;
+				viewport: center;
 			}
+			.header__main{
+				font-size: 30px;
+				font-weight: 800;
+			}
+			.header__sub{
+				font-size: 12px;
+				font-weight: 500;
+			}
+			.rinnova{
+				margin:8px auto;
+				width:500px;
+			}
+			.salutation{
+				max-width: 700px;
+				viewport: center;
+			}
+			.salutation__main{
+				font-size: 30px;
+				font-weight: 800;
+			}
+			#on-brew{
+				font-size: 13px;
+			}
+/****** Mobile ******/
+			@media screen and (max-width:460px){
+				.activity-list-date{
+					width: 700px;
+					font-size: 50px;
+					padding: 30px 10px 35px 10px;
+				}
+				.activity-list-date span{
+					font-size:30px;
+				}
+				.activity-list-info{
+					font-size: 30px;
+				}
+				.activity-list-info li{
+					margin: 0px 0px 20px 0px;
+				}
+				body{
+					width:450px;
+				}
+				.days-of-week-table{
+					width: 700px;
+					margin: 0px auto;
+				}
+				.header{
+					width: 700px;
+					margin-bottom: 25px;
+				}
+				.header__main{
+					font-size: 50px;
+					line-height: 80px;
+				}
+				.header__sub{
+					font-size: 25px;
+					line-height: 50px;
+				}
+				#on-brew{
+					font-size: 30px;
+				}
+				.rinnova__logo{
+					padding-left: 155px;
+				}
+				.salutation{
+					width: 700px;
+					margin-bottom: 25px;
+				}
+				.salutation__main{
+					font-size: 50px;
+					line-height: 80px;
+				}
+
+			}
+
 		</style>
 	</head>
-	<body style="height: 100%;margin: 0;padding: 0;width: 100%;background-color: #1EA549;-webkit-font-smoothing: antialiased;font-family: Helvetica, Arial, sans-serif;font-size: 14px;color: #2E2B23;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+	<body style="height: 100%;margin: 0 auto;padding: 0;width: 100%;-webkit-font-smoothing: antialiased;font-family: 'Montserrat', sans-serif;font-size: 17.5px;color: #2E2B23;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 		<center>
-			<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding: 0;width: 100%;background-color: #1EA549;-webkit-font-smoothing: antialiased;font-family: Helvetica, Arial, sans-serif;font-size: 14px;color: #2E2B23;">
+			<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding: 0;width: 100%;-webkit-font-smoothing: antialiased;font-family: 'Montserrat', sans-serif;font-size: 14px;color: #2E2B23;">
 				<tr>
 					<td align="center" valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 						<table align="center" cellpadding="0" cellspacing="0" width="100%" id="emailBody" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 							<tr>
 								<td align="center" valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-									<!--[if gte mso 9]>
-									<table align="center" border="0" cellspacing="0" cellpadding="0" width="640">
-									<tr>
-									<td align="center" valign="top">
-									<![endif]-->
-									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 640px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+
+<!----------------------------------------------------- HEADER ------------------------------------------------------>
+
+									<table class="header" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #003963;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 700px;viewport: center;">
+										<!------------------------------------ THIS WEEK ON CAMPUS / DATE -------------------------------------->
 										<tr>
-											<td align="center" valign="top" style="padding: 30px 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-												<a href="#" style="word-wrap: break-word;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-													<img src="https://raw.githubusercontent.com/albrechtnate/SGA-TWOC-Email-Template/master/logo.png" width="470" style="max-width: 80%;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" alt="This Week on Campus" border="0" align="center">
+											<td align="center" style="text-align:center;margin-left: auto;margin-right: auto;width:450px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+																<p class="header__main" style="margin: 0;padding-top: 25px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #FFFFFF;font-size: 30px;font-weight: 800;">THIS WEEK ON CAMPUS</p>
+																<p class="header__sub" style="padding-bottom: 25px;margin: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #FFFFFF;font-size: 12px;font-weight: 500;">August 19, 2019 - August 23, 2019</p>
+															</td>
+													</tr></table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+<!------------------------------------------------------------------------------------------------------------------------->
+
+
+<!-------------------------------------------------- ON BREW THIS WEEK ---------------------------------------------------->
+
+									<table class="rinnova" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 8px auto;width: 300px;">
+										<tr>
+											<td class="rinnova__logo" align="right" valign="center" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+												<a href="#" style="word-wrap:break-word;mso-line-height-rule:exactly;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+													<img src="https://raw.githubusercontent.com/jessicakstonge/SGA-email-template/master/emailTemplate/Images/rinnova.png" style="max-width: 80%;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" alt="Rinnova: renew you day" border="0">
 												</a>
-												<p style="margin: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-size: 16px; font-weight: bold; color:#FAF7F0;padding-top:20px;">July 22nd through April 28th</p>
+											</td>
+										<td align="left" valign="center" style="padding-left:20px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+												<p id="on-brew" style="margin: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-weight: 500;color: #231F20;font-size: 13px;"><strong>ON BREW:</strong><br> Rinnova Blend</p>
 											</td>
 										</tr>
 									</table>
-									<!--[if gte mso 9]>
-									</td>
-									</tr>
-									</table>
-									<![endif]-->
-								</td>
-							</tr>
-						</table>
 
-						<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+
+<!------------------------------------------------------------------------------------------------------------------------->
+
+
+<!-------------------------------------------------- DAYS OF THE WEEK ---------------------------------------------------->
+
+
+						<table class="days-of-week-table" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" id="emailColumns" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 							<tr>
 								<td align="center" valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-									<!--[if gte mso 9]>
-									<table align="center" border="0" cellspacing="0" cellpadding="0" width="640">
-									<tr>
-									<td align="center" valign="top">
-									<![endif]-->
-									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 640px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 										<tr>
-											<td valign="top" class="greeting greeting-head" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FAF7F0;padding: 30px 30px 15px 30px;font-size: 16px;border: #EBDAB5 solid;border-width: 0 0 1px 0;">
-												<p style="margin: 0 0 1em 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><b>Hey Cedarville!</b></p>
-												
-												<p style="margin: 0 0 1em 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">We hope Easter break was relaxing &amp; refreshing for you! Here&rsquo;s what&rsquo;s happening this week on campus!</p>
-											</td>
-										</tr>
-									</table>
-									<!--[if gte mso 9]>
-									</td>
-									</tr>
-									</table>
-									<![endif]-->
-								</td>
-							</tr>
-						</table>
+											<td valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+<!------------------------------------------------------------------------------------------------------------------------->
 
-						<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" id="emailColumns" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-							<tr>
-								<td align="center" valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-									<!--[if gte mso 9]>
-									<table align="center" border="0" cellspacing="0" cellpadding="0" width="640">
-									<tr>
-									<td align="center" valign="top">
-									<![endif]-->
-									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 640px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+										<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 										<tr>
-											<td valign="top" bgcolor="#F0E4C9" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-												<!--[if gte mso 9]>
-												<table border="0" cellpadding="0" cellspacing="0" width="640">
-												<tr>
-												<td align=”center” valign=”top” width="320">
-												<![endif]-->
+											<td valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+
+				<!------------------------------------ MONDAY -------------------------------------->
+												<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 20px;">
+													<tr>
+														<td align="center" width="100%" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 0px 30px;">
+															<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+																<tr>
+																	<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #003963;padding: 10px 15px 12px 15px;line-height: 16px;font-size: 30px;width: 350px;">monday <span style="float: right;font-size: 16px;">8/19</span></td>
+																</tr>
+																<tr>
+																	<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;">
+																		<ol style="list-style: none;margin: 0;padding-left: 20px;list-style-position: outside;">
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Senior Class Chapel @ 10am</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Centennial Library Book Sale all day (Library)</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">ELLIV Ticket Sales from 11am&ndash;3pm (Upper SSC)</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Jazz Band Concert @ 4:30pm (DMC Recital Hall)</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Golden Jacket Awards @ 7pm (DeVries Theater)</li>
+																	</ol>
+																</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+
+				<!------------------------------------ TUESDAY -------------------------------------->
+
+
+										<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+										<tr>
+											<td valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 20px;">
+													<tr>
+														<td align="center" width="100%" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 0px 30px;">
+															<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+																<tr>
+																	<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #003963;padding: 10px 15px 12px 15px;line-height: 16px;font-size: 30px;width: 350px;">tuesday <span style="float: right;font-size: 16px;">8/20</span></td>
+																</tr>
+																<tr>
+																	<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;">
+																		<ol style="list-style: none;margin: 0;padding-left: 20px;list-style-position: outside;">
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Senior Class Chapel @ 10am</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Centennial Library Book Sale all day (Library)</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">ELLIV Ticket Sales from 11am&ndash;3pm (Upper SSC)</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Jazz Band Concert @ 4:30pm (DMC Recital Hall)</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Golden Jacket Awards @ 7pm (DeVries Theater)</li>
+																	</ol>
+																</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+
+				<!------------------------------------ WEDNESDAY -------------------------------------->
+
+
+										<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+										<tr>
+											<td valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 20px;">
+													<tr>
+														<td align="center" width="100%" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 0px 30px;">
+															<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+																<tr>
+																	<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #003963;padding: 10px 15px 12px 15px;line-height: 16px;font-size: 30px;width: 350px;">wednesday <span style="float: right;font-size: 16px;">8/21</span></td>
+																</tr>
+																<tr>
+																	<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;">
+																		<ol style="list-style: none;margin: 0;padding-left: 20px;list-style-position: outside;">
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Senior Class Chapel @ 10am</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Centennial Library Book Sale all day (Library)</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">ELLIV Ticket Sales from 11am&ndash;3pm (Upper SSC)</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Jazz Band Concert @ 4:30pm (DMC Recital Hall)</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Golden Jacket Awards @ 7pm (DeVries Theater)</li>
+																	</ol>
+																</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+
+
+				<!------------------------------------ THURSDAY -------------------------------------->
+
+
+										<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+										<tr>
+											<td valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 20px;">
+													<tr>
+														<td align="center" width="100%" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 0px 30px;">
+															<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+																<tr>
+																	<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #003963;padding: 10px 15px 12px 15px;line-height: 16px;font-size: 30px;width: 350px;">thursday <span style="float: right;font-size: 16px;">8/22</span></td>
+																</tr>
+																<tr>
+																	<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;">
+																		<ol style="list-style: none;margin: 0;padding-left: 20px;list-style-position: outside;">
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Senior Class Chapel @ 10am</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Centennial Library Book Sale all day (Library)</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">ELLIV Ticket Sales from 11am&ndash;3pm (Upper SSC)</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Jazz Band Concert @ 4:30pm (DMC Recital Hall)</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Golden Jacket Awards @ 7pm (DeVries Theater)</li>
+																	</ol>
+																</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+
+				<!------------------------------------ FRIDAY -------------------------------------->
+
+
+										<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+										<tr>
+											<td valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 20px;">
+													<tr>
+														<td align="center" width="100%" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 0px 30px;">
+															<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+																<tr>
+																	<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #003963;padding: 10px 15px 12px 15px;line-height: 16px;font-size: 30px;width: 350px;">friday <span style="float: right;font-size: 16px;">8/23</span></td>
+																</tr>
+																<tr>
+																	<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;">
+																		<ol style="list-style: none;margin: 0;padding-left: 20px;list-style-position: outside;">
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Senior Class Chapel @ 10am</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Centennial Library Book Sale all day (Library)</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">ELLIV Ticket Sales from 11am&ndash;3pm (Upper SSC)</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Jazz Band Concert @ 4:30pm (DMC Recital Hall)</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Golden Jacket Awards @ 7pm (DeVries Theater)</li>
+																	</ol>
+																</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+
+				<!------------------------------------ SATURDAY -------------------------------------->
+
+
+										<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+										<tr>
+											<td valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 20px;">
+													<tr>
+														<td align="center" width="100%" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 0px 30px;">
+															<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+																<tr>
+																	<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #003963;padding: 10px 15px 12px 15px;line-height: 16px;font-size: 30px;width: 350px;">saturday <span style="float: right;font-size: 16px;">8/24</span></td>
+																</tr>
+																<tr>
+																	<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;">
+																		<ol style="list-style: none;margin: 0;padding-left: 20px;list-style-position: outside;">
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Senior Class Chapel @ 10am</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Centennial Library Book Sale all day (Library)</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">ELLIV Ticket Sales from 11am&ndash;3pm (Upper SSC)</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Jazz Band Concert @ 4:30pm (DMC Recital Hall)</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Golden Jacket Awards @ 7pm (DeVries Theater)</li>
+																	</ol>
+																</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+
+				<!------------------------------------ SUNDAY -------------------------------------->
+
+
+										<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+										<tr>
+											<td valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 20px;">
+													<tr>
+														<td align="center" width="100%" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 0px 30px;">
+															<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+																<tr>
+																	<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #003963;padding: 10px 15px 12px 15px;line-height: 16px;font-size: 30px;width: 350px;">sunday <span style="float: right;font-size: 16px;">8/25</span></td>
+																</tr>
+																<tr>
+																	<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;">
+																		<ol style="list-style: none;margin: 0;padding-left: 20px;list-style-position: outside;">
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Senior Class Chapel @ 10am</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Centennial Library Book Sale all day (Library)</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">ELLIV Ticket Sales from 11am&ndash;3pm (Upper SSC)</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Jazz Band Concert @ 4:30pm (DMC Recital Hall)</li>
+																			<li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Golden Jacket Awards @ 7pm (DeVries Theater)</li>
+																	</ol>
+																</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+
+				<!------------------------------------ SERVICE -------------------------------------->
+
+
+										<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+										<tr>
+											<td valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 20px;">
+													<tr>
+														<td align="center" width="100%" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 0px 30px;">
+															<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+																<tr>
+																	<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #003963;padding: 10px 15px 12px 15px;line-height: 16px;font-size: 30px;width: 350px;">service</td>
+																</tr>
+																<tr>
+																	<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;">
+																		<p style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">SERVICEY SERVICE SERVICE SERRRRRRVVVVEEEEEEEEEEE</p>
+																</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+
+<!------------------------------------------------------- CLOSEOUT ------------------------------------------------------------------>
+
+				<!------------------------------------ HAVE A WONDERFUL WEEK -------------------------------------->
+										<table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 700px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+										<tr>
+											<td valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 700px;">
+													<tr>
+														<td align="center" width="700px" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 0px 30px;">
+															<table class="salutation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+																<tr>
+																	<td class="salutation__main" style="text-align: center; width: 700px; mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 7px 15px 7px 15px;font-size: 23px;line-height: 16px;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #003963;">have a wonderful week!</td>
+																</tr>
+																<tr>
+																	<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px 0px 40px;">
+																		<p style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Regards,</p>
+																</td>
+																</tr>
+															</table>
+				<!------------------------------------ SIGNATURE -------------------------------------->
+
 												<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" class="leftColumn" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 320px;padding-bottom: 50px;">
 													<tr>
-														<td align="center" valign="top" class="imageContainer" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 40px 30px;">
-															<img src="https://raw.githubusercontent.com/albrechtnate/SGA-TWOC-Email-Template/master/monday.png" alt="Monday" width="150" class="flexibleImage" style="border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;max-width: 150px;">
-															<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FAF7F0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-																<tr>
-																	<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 7px;font-size: 16px;line-height: 16px;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #1EA549;">April 22nd</td>
-																</tr>
-																<tr>
-																	<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;"><p align="center" style="margin: 0 0 1em 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">No Events Scheduled</p></td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-												</table>
-												<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" class="rightColumn" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 320px;padding-bottom: 50px;">
-													<tr>
-														<td align="center" valign="top" class="imageContainer" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 40px 30px;">
-															<img src="https://raw.githubusercontent.com/albrechtnate/SGA-TWOC-Email-Template/master/tuesday.png" alt="Tuesday" width="150" class="flexibleImage" style="border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;max-width: 150px;">
-															<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FAF7F0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-																<tr>
-																	<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 7px;font-size: 16px;line-height: 16px;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #1EA549;">April 23rd</td>
-																</tr>
-																<tr>
-																	<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;"><ol style="margin: 0;padding-left: 20px;list-style-position: outside;"><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">SGA Chapel @ 10am</li><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">ELLIV Ticket Sales from 11am&ndash;3pm (Upper SSC)</li><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Men&rsquo;s Tennis vs. Ashland @ 3pm (CU Tennis Complex)</li><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">General Recital @ 5pm (DMC Recital Hall)</li><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Orchestra Concert @ 7pm (DeVries Theater)</li></ol></td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-												</table>
-												<!--[if gte mso 9]>
-												</td>
-												</tr>
-												</table>
-												<![endif]-->
-											</td>
-										</tr>
-									</table>
-									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 640px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-										<tr>
-											<td valign="top" bgcolor="#F0E4C9" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-												<!--[if gte mso 9]>
-												<table border="0" cellpadding="0" cellspacing="0" width="640">
-												<tr>
-												<td align=”center” valign=”top” width="320">
-												<![endif]-->
-												<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" class="leftColumn" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 320px;padding-bottom: 50px;">
-													<tr>
-														<td align="center" valign="top" class="imageContainer" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 40px 30px;">
-															<img src="https://raw.githubusercontent.com/albrechtnate/SGA-TWOC-Email-Template/master/wednesday.png" alt="Wednesday" width="150" class="flexibleImage" style="border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;max-width: 150px;">
-															<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FAF7F0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-																<tr>
-																	<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 7px;font-size: 16px;line-height: 16px;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #1EA549;">April 24th</td>
-																</tr>
-																<tr>
-																	<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;"><ol style="margin: 0;padding-left: 20px;list-style-position: outside;"><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Senior Class Chapel @ 10am</li><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Centennial Library Book Sale all day (Library)</li><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">ELLIV Ticket Sales from 11am&ndash;3pm (Upper SSC)</li><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Jazz Band Concert @ 4:30pm (DMC Recital Hall)</li><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Golden Jacket Awards @ 7pm (DeVries Theater)</li></ol></td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-												</table>
-												<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" class="rightColumn" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 320px;padding-bottom: 50px;">
-													<tr>
-														<td align="center" valign="top" class="imageContainer" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 40px 30px;">
-															<img src="https://raw.githubusercontent.com/albrechtnate/SGA-TWOC-Email-Template/master/thursday.png" alt="Thursday" width="150" class="flexibleImage" style="border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;max-width: 150px;">
-															<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FAF7F0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-																<tr>
-																	<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 7px;font-size: 16px;line-height: 16px;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #1EA549;">April 25th</td>
-																</tr>
-																<tr>
-																	<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;"><ol style="margin: 0;padding-left: 20px;list-style-position: outside;"><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Centennial Library Book Sale all day (Library)</li><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">ELLIV Ticket Sales from 11am&ndash;3pm (Upper SSC)</li><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Wind Symphony Concert @ 7:30pm (DeVries Theater)</li><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Is God a Moral Monster? Talk by Dan DeWitt @ 8pm (BTS 104)</li></ol></td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-												</table>
-												<!--[if gte mso 9]>
-												</td>
-												</tr>
-												</table>
-												<![endif]-->
-											</td>
-										</tr>
-									</table>
-									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 640px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-										<tr>
-											<td valign="top" bgcolor="#F0E4C9" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-												<!--[if gte mso 9]>
-												<table border="0" cellpadding="0" cellspacing="0" width="640">
-												<tr>
-												<td align=”center” valign=”top” width="320">
-												<![endif]-->
-												<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" class="leftColumn" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 320px;padding-bottom: 50px;">
-													<tr>
-														<td align="center" valign="top" class="imageContainer" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 40px 30px;">
-															<img src="https://raw.githubusercontent.com/albrechtnate/SGA-TWOC-Email-Template/master/friday.png" alt="Friday" width="150" class="flexibleImage" style="border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;max-width: 150px;">
-															<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FAF7F0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-																<tr>
-																	<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 7px;font-size: 16px;line-height: 16px;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #1EA549;">April 26th</td>
-																</tr>
-																<tr>
-																	<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;"><ol style="margin: 0;padding-left: 20px;list-style-position: outside;"><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Centennial Library Book Sale all day (Library)</li><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">ELLIV Ticket Sales from 11am&ndash;3pm (Upper SSC)</li><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Softball vs. Tiffin @ 3pm &amp; 5pm (CU Softball Fields)</li><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Cedarville Review Launch Party from 4pm&ndash;6pm (Upper SSC)</li></ol></td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-												</table>
-												<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" class="rightColumn" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 320px;padding-bottom: 50px;">
-													<tr>
-														<td align="center" valign="top" class="imageContainer" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 40px 30px;">
-															<img src="https://raw.githubusercontent.com/albrechtnate/SGA-TWOC-Email-Template/master/saturday.png" alt="Saturday" width="150" class="flexibleImage" style="border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;max-width: 150px;">
-															<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FAF7F0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-																<tr>
-																	<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 7px;font-size: 16px;line-height: 16px;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #1EA549;">April 27th</td>
-																</tr>
-																<tr>
-																	<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;"><ol style="margin: 0;padding-left: 20px;list-style-position: outside;"><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Softball vs. Hillsadale @ 12pm &amp; 2pm (CU Softball Fields)</li><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">ELLIV @ 7pm (DMC)</li></ol></td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-												</table>
-												
-												<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 640px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-													<tr>
-														<td valign="top" bgcolor="#F0E4C9" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-															<!--[if gte mso 9]>
-															<table border="0" cellpadding="0" cellspacing="0" width="640">
-															<tr>
-															<td align=”center” valign=”top” width="320">
-															<![endif]-->
-															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" class="leftColumn" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 320px;padding-bottom: 50px;">
-																<tr>
-																	<td align="center" valign="top" class="imageContainer" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 40px 30px;">
-																		<img src="https://raw.githubusercontent.com/albrechtnate/SGA-TWOC-Email-Template/master/sunday.png" alt="Sunday" width="150" class="flexibleImage" style="border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;max-width: 150px;">
-																		<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FAF7F0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-																			<tr>
-																				<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 7px;font-size: 16px;line-height: 16px;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #1EA549;">April 28th</td>
-																			</tr>
-																			<tr>
-																				<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px;"><ol style="margin: 0;padding-left: 20px;list-style-position: outside;"><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Senior Flute Recital: Chloe Lance @ 5pm (DMC Recital Hall)</li><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 8px;">Senior Guitar Recital: Eugene Fortier @ 7pm (DMC Recital Hall)</li></ol></td>
-																			</tr>
-																		</table>
-																	</td>
-																</tr>
-															</table>
-															<!--[if gte mso 9]>
-															</td>
+														<td align="right" valign="top" class="imageContainer" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 0px 30px;">
+															<img alt="Jake and Natalia: SGA Involvement Directors" src="https://raw.githubusercontent.com/jessicakstonge/SGA-email-template/master/__Jake%20%26%20natalia.png" width="350px" style="max-width: 350px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;">
+																</td>
 															</tr>
-															</table>
-															<![endif]-->
-														</td>
-													</tr>
 												</table>
-												
-												
-												<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 640px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-													<tr>
-														<td valign="top" bgcolor="#F0E4C9" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-															<!--[if gte mso 9]>
-															<table border="0" cellpadding="0" cellspacing="0" width="640">
-															<tr>
-															<td align=”center” valign=”top” width="320">
-															<![endif]-->
-															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 50px;">
-																<tr>
-																	<td align="center" valign="top" class="imageContainer" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 10px 30px 40px 30px;">
-																		<img src="https://raw.githubusercontent.com/albrechtnate/SGA-TWOC-Email-Template/master/featured-service-opportunities.png" alt="Featured Service Opportunities" width="450" class="flexibleImage" style="border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;max-width: 450px;">
-																		<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FAF7F0" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-																			<tr>
-																				<td class="activity-list-date" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 7px;font-size: 16px;line-height: 16px;letter-spacing: 0.5px;font-weight: bold;color: #FAF7F0;background-color: #1EA549;">Featured Service Opportunities</td>
-																			</tr>
-																			<tr>
-																				<td class="activity-list-info" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding: 15px 7px 30px 7px;"><ol style="margin: 0;padding-left: 20px; padding-right: 20px; list-style-position: outside;"><li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;list-style:none;padding-bottom: 8px;"><h3 style="margin-bottom:10px">One Bistro in Xenia</h3><p style="margin-bottom:30px">One Bistro is looking for a few extra hands to help serve! One Bistro is a faith-based non-profit Biznistry&reg; established for the betterment of our community. They strive to serve a healthy, affordable meal to their neighbors&mdash;those who have the ability to pay and those who under normal circumstances would not be able to eat out. If you are interested or available to help serve at One Bistro, please follow this link to sign up!</p><a href=https://onebistro.org/volunteer style="background-color:#1EA549;color:white;text-decoration:none;padding:8px">Learn More</a></li></ol></td>
-																			</tr>
-																		</table>
-																	</td>
-																</tr>
-															</table>
-															<!--[if gte mso 9]>
-															</td>
-															</tr>
-															</table>
-															<![endif]-->
-														</td>
-													</tr>
-												</table>
-												
-												<!--[if gte mso 9]>
-												</td>
-												</tr>
-												</table>
-												<![endif]-->
-											</td>
-										</tr>
-									</table>
-									<!--[if gte mso 9]>
-									</td>
-									</tr>
-									</table>
-									<![endif]-->
-								</td>
-							</tr>
-						</table>
 
-						<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-							<tr>
-								<td align="center" valign="top" class="footer" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-bottom: 50px;">
-									<!--[if gte mso 9]>
-									<table align="center" border="0" cellspacing="0" cellpadding="0" width="640">
-									<tr>
-									<td align="center" valign="top">
-									<![endif]-->
-									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 640px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-										<tr>
-											<td valign="top" class="greeting greeting-footer" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FAF7F0;padding: 30px 30px 15px 30px;font-size: 16px;border: #EBDAB5 solid;border-width: 1px 0 0 0;">
-												<p style="margin: 0 0 1em 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Have a great last week of classes!</p>
-												<p style="margin-bottom: 0;margin: 0 0 1em 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Regards,</p>
-												<img src="https://raw.githubusercontent.com/albrechtnate/SGA-TWOC-Email-Template/master/signature.png" width="300" style="margin-left: -20px;max-width: 100%;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" alt="Kristin and Marcus, SGA Involvement Directors">
-												<p style="border-top: 3px solid #1EA549;padding-top: 15px;font-size: 14px;line-height: 18px;margin: 0 0 1em 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><b>Marcus:</b> T 11&ndash;12 / R 12&ndash;2<br><b>Kristin:</b> M 11&ndash;12 / T 1&ndash;2 / F 1&ndash;2</p>
-												<p style="color:#717171;padding-top: 15px;font-size: 12px;line-height: 18px;margin: 0 0 1em 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Is this email not displaying properly? Please <a style="color:#717171" href="mailto:sgamarketing@cedarville.edu">let us know</a>.</p>
-
-											</td>
-										</tr>
-									</table>
-									<!--[if gte mso 9]>
-									</td>
-									</tr>
-									</table>
-									<![endif]-->
-								</td>
-							</tr>
-						</table>
+													</td></tr>
+												</table>
 					</td>
 				</tr>
+
+
 			</table>
-		</center>
+		</td></tr></table></td></tr></table></td></tr></table></td></tr></table></td></tr></table></td></tr></table></td></tr></table></td></tr></table></td></tr></table></td></tr></table></center>
 	</body>
 </html>
