@@ -115,30 +115,29 @@
 			}
 /****** Mobile ******/
 			@media screen and (max-width:460px){
-				.activity-list-date{
-					width: 700px;
-					font-size: 50px;
-					padding: 30px 10px 35px 10px;
+				table[class=mobileQuery]{
+					width: 320px !important;
+					font-family: 'Montserrat', sans-serif !important;
 				}
-				.activity-list-date span{
-					font-size:30px;
+				td[class=activity-list-date]{
+					width: 700px !important;
+					font-size: 50px !important;
+					padding: 30px 10px 35px 10px !important;
 				}
-				.activity-list-info{
-					font-size: 30px;
+				td[class=activity-list-date] span{
+					font-size:30px !important;
 				}
-				.activity-list-info li{
-					margin: 0px 0px 20px 0px;
+				td[class=activity-list-info]{
+					font-size: 30px !important;
 				}
-				body{
-					width:450px;
+				td[class=activity-list-info] li{
+					margin: 0px 0px 20px 0px !important;
 				}
-				.days-of-week-table{
-					width: 700px;
-					margin: 0px auto;
+				body[class=mobileQuery]{
+					width:320px !important;
 				}
-				.header{
-					width: 700px;
-					margin-bottom: 25px;
+				table[class=header]{
+					margin-bottom: 25px !important;
 				}
 				.header__main{
 					font-size: 50px;
@@ -167,7 +166,7 @@
 
 		</style>
 	</head>
-	<body style="height: 100%;margin: 0 auto;padding: 0;width: 100%;-webkit-font-smoothing: antialiased;font-family: 'Montserrat', sans-serif;font-size: 17.5px;color: #2E2B23;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+	<body style="height: 100%;margin: 0 auto;padding: 0;width: 100%;-webkit-font-smoothing: antialiased;color: #2E2B23;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 		<center>
 			<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding: 0;width: 100%;-webkit-font-smoothing: antialiased;font-family: 'Montserrat', sans-serif;font-size: 14px;color: #2E2B23;">
 				<tr>
@@ -179,7 +178,7 @@
 
 <!----------------------------------------------------- HEADER ------------------------------------------------------>
 
-									<table class="header" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #003963;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 700px;viewport: center;">
+									<table class="header mobileQuery" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #003963;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 700px;viewport: center;">
 										<!------------------------------------ THIS WEEK ON CAMPUS / DATE -------------------------------------->
 										<tr>
 											<td align="center" style="text-align:center;margin-left: auto;margin-right: auto;width:450px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
@@ -219,7 +218,7 @@
 <!-------------------------------------------------- DAYS OF THE WEEK ---------------------------------------------------->
 
 
-						<table class="days-of-week-table" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" id="emailColumns" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+						<table class="mobileQuery" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" id="emailColumns" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 							<tr>
 								<td align="center" valign="top" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
